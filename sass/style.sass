@@ -1,0 +1,375 @@
+*
+  font-family: Roboto, sans-serif
+  margin: 0 0
+
+figure
+  margin: 0 0
+p
+  margin: 0 0
+
+$white: #FFFFFF
+$yellow: #F9BF3B
+$dark-grey: #252525
+$light-grey: #4A4A4A
+$lighter-grey: #EFEFEF
+$blue: #299CBD
+
+// HEADER
+
+.header
+  background-image: url(../img/main_bg.png)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+
+  color: $white
+  &-logo
+    padding-top: 38px
+
+    text-align: center
+    &__caption
+      margin-top: 12px
+
+      font-size: 15px
+      line-height: 160%
+      font-weight: 500
+      text-transform: uppercase
+  &-text
+    margin-top: 51px
+
+    font-weight: 900
+    text-align: center
+    text-transform: uppercase
+    &__heading
+      font-size: 41px
+      line-height: 100%
+      color: $yellow
+    &__subheading
+      position: relative
+
+      font-size: 80px
+      line-height: 100%
+      &:after
+        position: absolute
+
+        content: ""
+        border-bottom: 2px $white solid
+        top: 50%
+        left: 0
+        width: 10%
+      &:before
+        position: absolute
+
+        content: ""
+        border-bottom: 2px $white solid
+        top: 50%
+        right: 0
+        width: 10%
+    &__text
+      margin-top: 22px
+      margin-bottom: 72px
+
+      text-align: left
+      font-size: 21px
+      line-height: 133%
+      font-weight: 300
+      text-transform: none
+      span
+        color: $yellow
+        font-weight: 700
+  &-more
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__button
+      padding: 23px 15px
+
+      background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%)
+      border: none
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4)
+
+      color: $white
+      font-size: 21px
+      line-height: 114%
+      font-weight: 300
+      text-transform: uppercase
+      &:hover
+        background: linear-gradient(0deg, #2283a1 0%, #329ebb 100%)
+    &-link
+      margin-top: 70px
+
+      display: flex
+      flex-direction: column
+      align-items: center
+
+      margin-bottom: 61px
+
+      color: $white
+      font-size: 15px
+      line-height: 160%
+      font-weight: 100
+      text-transform: uppercase
+      text-align: center
+
+// END OF HEADER
+
+// MAIN
+// SECTION ABOUT
+
+.about
+  padding-top: 85px
+  padding-bottom: 55px
+
+  background-color: $lighter-grey
+  &-text
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    text-align: center
+    &__heading
+      position: relative
+      margin-bottom: 30px
+
+      color: $dark-grey
+      font-size: 30px
+      font-weight: 400
+      text-transform: uppercase
+      text-align: center
+      &:after
+        position: absolute
+
+        content: ""
+
+        margin: auto
+        left: 0
+        right: 0
+        bottom: -14px
+
+        border: 2px $yellow solid
+        width: 35%
+
+    &__par
+      margin-bottom: 40px
+
+      color: $light-grey
+      font-weight: 400
+      font-size: 23px
+  &-card
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    text-align: center
+    color: $light-grey
+    font-size: 15px
+    line-height: 140%
+    font-weight: 300
+    &__caption
+      margin-top: 26px
+      margin-bottom: 20px
+      max-width: 350px
+
+// END OF SECION ABOUT
+
+// SECTION INTENSIVE
+.p_0
+  padding-right: 0
+.intensive
+  padding-top: 108px
+  padding-bottom: 74px
+
+  background-color: $white
+  background-image: url(../img/woman_bg.png)
+  background-repeat: no-repeat
+  background-position: left bottom
+  &-text
+    &__heading
+      color: $blue
+      font-size: 28px
+      line-height: 100%
+      font-weight: 900
+      text-transform: uppercase
+    &__par
+      color: $light-grey
+      font-size: 17px
+      line-height: 150%
+      font-weight: 300
+
+      margin-bottom: 27px
+.bold
+  font-weight: 700
+
+// END OF SECTION INTENSIVE
+
+// SECTION YOU CAN
+
+.you-can
+  padding-top: 86px
+  padding-bottom: 50px
+
+  background-image: url(../img/second_bg.png)
+  background-size: cover
+  background-repeat: no-repeat
+  &__heading
+    color: $white
+  &-card
+    margin-top: 40px
+    margin-bottom: 18px
+
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    text-align: center
+    color: $white
+    &__img
+      padding: 30px
+
+      background-color: #B4E2FF
+      border: none
+      max-width: 118px
+      max-height: 118px
+      border-radius: 50%
+    &__text
+      margin-top: 24px
+
+      font-size: 17px
+      line-height: 120%
+      color: $lighter-grey
+      font-weight: 300
+
+// END OF SECTION YOU CAN
+
+// SECTION GIFT
+
+.gift
+  padding-top: 85px
+  padding-bottom: 88px
+
+  background-color: $lighter-grey
+  &-content
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    &__text
+      margin-top: 45px
+      margin-bottom: 50px
+
+      font-size: 30px
+      line-height: 150%
+
+// END OF SECTION GIFT
+
+// SECTION ANNOUCEMENT
+
+.announcement
+  padding-top: 90px
+  padding-bottom: 53px
+  &-content
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    text-align: center
+    font-size: 23px
+    font-weight: 400
+    color: $light-grey
+    &__par
+      margin-top: 30px
+      margin-bottom: 25px
+
+      font-size: 30px
+      color: $dark-grey
+      text-transform: uppercase
+    &__heading
+      margin-bottom: 20px
+
+      font-size: 36px
+      font-weight: 900
+      color: $blue
+      text-transform: uppercase
+
+// END OF SECTION ANNOUCEMENT
+
+// FOOTER
+
+.footer
+  padding-top: 50px
+  padding-bottom: 60px
+
+  background-color: #1A1A1A
+
+  text-align: center
+  font-size: 15px
+  font-weight: 300
+  a
+    padding-right: 5px
+    color: #888888
+
+.first-row
+  text-decoration: underline
+.first-row_link
+  border-right: 1px solid #888888
+
+.tel
+  text-decoration: none
+
+@media (max-width: 1024px)
+  .intensive
+    background-size: 50%
+
+@media (max-width: 768px)
+  .header-text
+    &__heading
+      font-size: 30px
+    &__subheading
+      font-size: 50px
+
+@media (max-width: 425px)
+  .p_0
+    padding-right: 10px
+  .header-text
+    &__heading
+      font-size: 20px
+    &__subheading
+      font-size: 40px
+      &:after
+        none
+      &:before
+        none
+    &__text
+      font-size: 15px
+      text-align: center
+
+  .about
+    &-text
+      &__heading
+        font-size: 25px
+  .intensive
+    padding-top: 50px
+    padding-bottom: 30px
+
+    background-image: none
+    text-align: center
+    &-text
+      &__heading
+        font-size: 20px
+
+  .gift
+    padding-top: 50px
+    padding-bottom: 50px
+    &-content
+      &__text
+        font-size: 20px
+
+  .announcement
+    &-content
+      font-size: 15px
+      &__par
+        font-size: 20px
+      &__heading
+        font-size: 25px
+  .about-card__img
+    max-width: 300px
